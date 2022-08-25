@@ -6,32 +6,23 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i
-		inteiro num, maiorN = 0, maiorN2 = 0
+		inteiro i,num, maiorM = 0, segundoM = 0
 
 		escreva("digite os 10 numeros: \n")
-
-		i = 1
-		enquanto(i <= 10){
-			leia(num)
-
-			se(num > maiorN){
-
 		para(i=1; i<=10; i++){
 			leia(num)
 
+		se(num > maiorM){
+			segundoM = maiorM
 
-			se(num > maiorN){
-				maiorN = num
+		se(num > segundoM){
+			segundoM = num
 
-			se(num > maiorN2){
-				maiorN2 = num
-			}
-			}
+		escreva("o primeiro maior numero: ", maiorM)
+		escreva("o segundo maior numero: ", segundoM)
 		}
-			}
 		}
-		escreva("o maior numero ",maiorN, maiorN2)
+		}
 
 
 
@@ -57,7 +48,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 232; 
+ * @POSICAO-CURSOR = 514; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
